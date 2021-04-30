@@ -1,8 +1,13 @@
 name: Shell Commands
 
+<<<<<<< HEAD
 on: 
  push:
 jobs:
+=======
+on: [push]
+ jobs:
+>>>>>>> fa5231105c07e4326592bfc83d4acc69b22e8435
     run-shell-command: 
      runs-on: ubuntu-latest
      steps: 
@@ -12,8 +17,11 @@ jobs:
         run: | 
            node -v
            npm -v 
+<<<<<<< HEAD
       - name: python command
         run: |
             import platform
             print(platform.processor())
         shell: python 
+=======
+>>>>>>> fa5231105c07e4326592bfc83d4acc69b22e8435
